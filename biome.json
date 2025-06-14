@@ -11,8 +11,15 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "complexity": {
+        "noUselessRename": "error"
+      },
       "recommended": true,
-      "nursery": { "useSortedClasses": "warn" },
+      "nursery": { "useSortedClasses": {
+        "level": "warn",
+        "fix": "safe",
+        "options": {}
+      } },
       "correctness": {
         "noUnusedImports": "warn",
         "noUnusedVariables": "warn"
